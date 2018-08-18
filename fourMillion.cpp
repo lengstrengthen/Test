@@ -1,3 +1,4 @@
+//example
 #include<iostream>  
 #include<string.h>  
 #include<fstream>  
@@ -16,21 +17,21 @@ int main()
         setBit(arr,num);  
     }  
     in.close();  
-    cout<<"³õÊ¼»¯Íê±Ï..."<<endl;  
-    cout<<"ÇëÊäÈëÐèÒªÅÐ¶ÏµÄÊý£º";  
+    cout<<"åˆå§‹åŒ–å®Œæ¯•..."<<endl;  
+    cout<<"è¯·è¾“å…¥éœ€è¦åˆ¤æ–­çš„æ•°ï¼š";  
     while(cin>>num)  
     {  
         if(isSet(arr,num)!=0x00)  
         {  
-            cout<<num<<"ÔÚÊý×éÖÐ"<<endl;  
+            cout<<num<<"åœ¨æ•°ç»„ä¸­"<<endl;  
         }else  
-            cout<<num<<"²»ÔÚÊý×éÖÐ"<<endl;  
+            cout<<num<<"ä¸åœ¨æ•°ç»„ä¸­"<<endl;  
     }  
     delete[] arr;  
     return 0;  
 }  
 /* 
-*¹¦ÄÜ:½«num¶ÔÓ¦Î»ÖÃÎª1 
+*åŠŸèƒ½:å°†numå¯¹åº”ä½ç½®ä¸º1 
 */  
 void setBit(char *arr,unsigned int num)  s
 {  
@@ -39,7 +40,7 @@ void setBit(char *arr,unsigned int num)  s
     arr[loc]=arr[loc] | tag[remainder];  
 }  
 /* 
-*¹¦ÄÜ:ÅÐ¶Ïnum¶ÔÓ¦Î»ÊÇ·ñÖÃÎª1? 
+*åŠŸèƒ½:åˆ¤æ–­numå¯¹åº”ä½æ˜¯å¦ç½®ä¸º1? 
 */  
 int isSet(char *arr,unsigned int num)  
 {  
